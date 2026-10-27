@@ -6,7 +6,9 @@ def is_even(number: int) -> bool:
     """
 
     return number % 2 == 0
-
+# this one took me time because i didn't know what to do at first till i asked ai to help me, not to give me the code,
+# but to tell me what numerical sign i need to fulfil the code
+# most of these auto-correct helped me on
 
 def count_vowels(text: str) -> int:
     """Count how many vowels (a, e, i, o, u) are in text.
@@ -30,7 +32,7 @@ def celsius_to_fahrenheit(celsius: float) -> float:
     :param celsius: temp in celsius
     :return: temp in fahrenheit
     """
-    return (celsius * 9 / 5) + 32
+    return (celsius * 1.8) + 32
 
 
 def reverse_text(text: str) -> str:
@@ -202,7 +204,7 @@ def describe_temperature(temperature: float, cold_limit: float, hot_limit: float
         return "comfortable"
 
 def temperature_in_safe_range(celsius: float, minimum_f: float, maximum_f: float) -> bool:
-    fahrenheit = (celsius * 9 / 5) + 32
+    fahrenheit = (celsius * 1.8) + 32
     return minimum_f <= fahrenheit <= maximum_f
 
 def can_afford_with_tip(balance: float, cost: float, tip_percent: float) -> bool:
@@ -233,7 +235,7 @@ if __name__ == "__main__":
         maximum_f = float(input("Enter maximum Fahrenheit: "))
         print("Safe range:", temperature_in_safe_range(celsius, minimum_f, maximum_f))
 
-        print("\ncan you afford it")
+        print("\nCan you afford it")
         balance = float(input("Enter your balance: $"))
         cost = float(input("Enter the cost: $"))
         tip_percent = float(input("Enter tip percentage: "))
@@ -253,5 +255,5 @@ if __name__ == "__main__":
         print("Initials match:", initials_match(first_name, last_name, expected_initials))
 
     except ValueError:
-        print("Invalid input. Please enter numbers where requested.")
+        print("Invalid input. Please enter numbers where requested. RESTART!")
 
