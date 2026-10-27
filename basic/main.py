@@ -223,5 +223,5 @@ if __name__ == "__main__":
     Additionally, there is a test file loaded into
     this folder that you can run a test on your code.
     """
-    
+    print(can_afford(8, 9))
 
