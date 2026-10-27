@@ -1,6 +1,6 @@
 import pytest
 
-from main import (
+from advanced_main import (
     temperature_in_safe_range,
     can_afford_with_tip,
     meets_average,
